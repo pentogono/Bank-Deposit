@@ -10,18 +10,18 @@ class DepositServiceTest {
     void calculateDeposit1() {
         {
             DepositService service = new DepositService();
-            int bankDeposit = service.calculateDeposit(1000,12,8);
-            assertEquals(1080,bankDeposit);
+            int bankDeposit = service.calculateDeposit(1_000, 12, 8);
+            assertEquals(1_080, bankDeposit);
         }
         {
             DepositService service = new DepositService();
-            int bankDeposit = service.calculateDeposit(1000,1,8);
-            assertEquals(1007,bankDeposit);
+            int bankDeposit = service.calculateDeposit(1_000, 1, 8);
+            assertEquals(1_007, bankDeposit);
         }
         {
             DepositService service = new DepositService();
-            int bankDeposit = service.calculateDeposit(1000,6,8);
-            assertEquals(1040,bankDeposit);
+            int bankDeposit = service.calculateDeposit(1_000, 6, 8);
+            assertEquals(1_040, bankDeposit);
         }
     }
-    }
+}
