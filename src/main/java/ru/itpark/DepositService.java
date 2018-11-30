@@ -9,14 +9,14 @@ public class DepositService {
         int result;
 
         if (termOfDeposit == monthYear) {
-            result = (deposit * (hundredPercent + interestRate)) / hundredPercent;
+            return   (deposit * (hundredPercent + interestRate)) / hundredPercent;
         } else if (termOfDeposit == oneMonth) {
-            result = (((deposit * interestRate) / monthYear) / hundredPercent) + deposit;
+            return   (((deposit * interestRate) / monthYear) / hundredPercent) + deposit;
         } else {
-            result = (((deposit * interestRate) / monthYear) / hundredPercent) * termOfDeposit + deposit;
+            return  (((deposit * interestRate) / monthYear) / hundredPercent) * termOfDeposit + deposit;
         }
 
-        return result;
+
     }
 
 
