@@ -6,7 +6,6 @@ public class DepositService {
         int hundredPercent = 100;
         int monthYear = 12;
         int oneMonth = 1;
-        int result;
 
         if (termOfDeposit == monthYear) {
             return   (deposit * (hundredPercent + interestRate)) / hundredPercent;
