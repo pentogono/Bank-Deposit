@@ -16,12 +16,12 @@ class DepositServiceTest {
         {
             DepositService service = new DepositService();
             int bankDeposit = service.calculateDeposit(1_000, 1, 8);
-            assertEquals(1_007, bankDeposit);
+            assertEquals(1_006, bankDeposit);
         }
         {
             DepositService service = new DepositService();
             int bankDeposit = service.calculateDeposit(1_000, 6, 8);
-            assertEquals(1_040, bankDeposit);
+            assertEquals(1_036, bankDeposit);
         }
     }
 }
