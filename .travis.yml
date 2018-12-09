@@ -9,6 +9,6 @@ after_success:
 notifications:
   email:
     recipients:
-    - ilg3109@gmail.com
+     - ilg3109@gmail.com
     on_failure: always
     on_success: change
